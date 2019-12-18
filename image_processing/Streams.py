@@ -10,7 +10,7 @@ class RGBimage:
 
   def __init__(self, width=320, height=240, fps=30):
     if not openni2.is_initialized():
-      openni2.initialize()
+      openni2.initialize("/usr/lib/")
 
     self.width = width
     self.height = height
@@ -41,7 +41,7 @@ class DepthImage:
 
   def __init__(self, width=320, height=240, fps=30):
     if not openni2.is_initialized():
-      openni2.initialize()
+      openni2.initialize("/usr/lib/")
 
     self.width = width
     self.height = height
