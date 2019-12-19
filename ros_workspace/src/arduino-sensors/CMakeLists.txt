@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(sonar)
+project(arduino-sensors)
 
 find_package(catkin REQUIRED COMPONENTS
   roscpp
@@ -19,5 +19,5 @@ rosserial_configure_client(
   TOOLCHAIN_FILE ${ROSSERIAL_ARDUINO_TOOLCHAIN}
 )
 
-rosserial_add_client_target(firmware sonar ALL)
-rosserial_add_client_target(firmware sonar-upload)
+rosserial_add_client_target(firmware arduino-sensors ALL)
+rosserial_add_client_target(firmware arduino-sensors-upload)
