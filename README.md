@@ -27,4 +27,12 @@ Ok. This one will be tricky:
 - It'll be nice to have `tmux, screen` or something similar.
 
 Now to start the workspace navigate to `./ros_workspace` and run `catkin_make` and then `source devel/setup.bash`.  
-Start `roscore`, the camera `roslaunch openni2_launch openni2.launch` and then the arduino node `rosrun rosserial_python serial_node.py /dev/ttyACM0`, now for the camera nodes `rosrun camera_rgb_img node.py` and `rosrun camera_rgb_img node.py`.
+
+Upload the Arduino code `catkin_make arduino_sensors_firmware_arduino_sensors-upload`.  
+
+Start the ROS-nodes:
+
+- Start `roscore`.
+- Camera topics `roslaunch openni2_launch openni2.launch`.
+- Arduino node `rosrun rosserial_python serial_node.py /dev/ttyACM0`.
+- Camera nodes `rosrun camera_rgb_img node.py` and `rosrun camera_rgb_img node.py`.
