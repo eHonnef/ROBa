@@ -5,9 +5,8 @@ include_directories(${ROS_LIB_DIR})
 # Remove this if using an Arduino without native USB (eg, other than Leonardo)
 add_definitions(-DUSB_CON)
 
-generate_arduino_firmware(sonar
+generate_arduino_firmware(arduino_sensors
   SRCS main.cpp ${ROS_LIB_DIR}/time.cpp
-  #SRCS chatter.cpp ${ROS_LIB_DIR}/time.cpp
   BOARD mega2560
   PORT /dev/ttyACM0
 )

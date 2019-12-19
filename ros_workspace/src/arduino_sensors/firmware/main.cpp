@@ -1,4 +1,4 @@
-#include <srf08_lib.cpp>
+#include <srf08.cpp>
 #include <ros.h>
 #include <std_msgs/UInt16.h>
 
@@ -12,7 +12,7 @@ std_msgs::UInt16 sonar_msg;
 ros::Publisher pub_sonar("sonar", &sonar_msg);
 
 // #define MAIN_08_ADDRESS (0xF8 >> 1)
-#define MAIN_08_ADDRESS 0x70
+#define MAIN_08_ADDRESS 0xEA
 
 // Setup Analogue Gain
 // http://www.robot-electronics.co.uk/htm/srf08tech.html section "Analogue Gain"
