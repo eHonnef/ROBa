@@ -1,6 +1,6 @@
 # ROBa
 
-Project for the robotics course.
+Project for the robotics course. This project aims to implement base nodes (listeners/publishers) for arduino mega sensors (SRF08 sonars and MinIMU-9) and the Asus xtionPro live camera. The nodes will run on Odroid XU4 with Ubuntu 18.04 and ROS melodic.
 
 ## Image processing
 
