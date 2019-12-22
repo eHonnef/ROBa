@@ -14,6 +14,11 @@ To run the code you need to install de `requirements.txt` file using `pip instal
 Of course you need to install an external library `openni2` that you [can find here](https://structure.io/openni).  
 Let me know if I missed some requirements.
 
+## Arduino schematics
+
+![circuit](./circuit.svg)
+P.S: IC = MinIMU-9.
+
 ## ROS
 
 Ok. This one will be tricky:
